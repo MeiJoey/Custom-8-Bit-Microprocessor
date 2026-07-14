@@ -16,6 +16,8 @@ A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and d
 * **ALU:** Executes 16 unique operations including addition (with `Cout`), subtraction, logical shifts (`LSL`/`LSR`), increments, decrements, and bitwise logic (`AND`/`OR`).
 * **Hardware I/O:** Features a 10ms hardware debounce module for single-cycle execution via pushbuttons, physical slide-switch data entry, and multiplexed 7-segment display tracking.
 
+![CPU Block Diagram](images/BlockDiagram.png)
+
 ## Tools
 * **Language:** Verilog HDL
 * **Toolchain:** Xilinx Vivado 
@@ -24,6 +26,8 @@ A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and d
 ## Verification & Simulation
 Functional verification was performed using behavioral Verilog testbenches to validate the complete instruction set execution flow. 
 * *Simulation Tip:* To expedite testbench behavioral verification, the physical 10ms debounce logic counter was bypassed to allow fluid continuous-enable execution tracking via the Vivado Tcl Console.
+
+![Waveform](images/Waveform.png)
 
 ## How to Run
 1. Clone this repository.
