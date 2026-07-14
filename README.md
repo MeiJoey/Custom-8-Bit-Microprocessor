@@ -20,6 +20,5 @@ Functional verification was performed using behavioral Verilog testbenches to va
 ## How to Run
 1. Clone this repository.
 2. Open Xilinx Vivado and create a new project targeting the **Basys 3 board**.
-3. Import all files from the `src/` and `sim/` directories.
-4. Import the `constraints/basys3_constraints.xdc` file.
-5. Run Behavioral Simulation to view waveforms, or Run Synthesis & Implementation to generate the bitstream and program the physical FPGA hardware.
+3. Import all files from the `src/`, `sim/`, and `constraints/` directories.
+4. Run Behavioral Simulation to view waveforms, or Run Synthesis & Implementation to generate the bitstream and program the physical FPGA hardware.
