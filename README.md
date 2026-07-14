@@ -12,24 +12,24 @@ A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and d
 
 ## Instruction Set
 * The processor implements a custom 4-bit instruction set supporting 16 arithmetic, logical, and register-transfer operations. Each opcode is decoded into one-hot control signals by a 4×16 instruction decoder.
-| Opcode | Operation | Description |
-|:------:|-----------|-------------|
-| 0000 | Load A | Loads Value into RegA |
-| 0001 | Load B | Loads Value into RegB |
-| 0010 | Clear A | Clears RegA |
-| 0011 | Clear B | Clears RegB |
-| 0100 | LSL A | Logical Shift Left RegA |
-| 0101 | LSR A | Logical Shift Right RegA |
-| 0110 | MOV A -> B | Move RegA Value to RegB |
-| 0111 | MOV B -> A | Move RegB Value to RegA |
-| 1000 | Complement A | Complements RegA |
-| 1001 | Complement B | Complements RegB |
-| 1010 | ADD | Add RegA and RegB, stores results in RegC |
-| 1011 | SUB | Subtracts RegA and RegB, stores result in RegC|
-| 1100 | Increment A | Increments RegA |
-| 1101 | Decrement A | Decrement RegA |
-| 1110 | AND | AND RegA and RegB, stores results in RegC |
-| 1111 | OR | OR RegA and RegB, stores results in RegC |
+* | Opcode | Operation | Description |
+* |:------:|-----------|-------------|
+* | 0000 | Load A | Loads Value into RegA |
+* | 0001 | Load B | Loads Value into RegB |
+* | 0010 | Clear A | Clears RegA |
+* | 0011 | Clear B | Clears RegB |
+* | 0100 | LSL A | Logical Shift Left RegA |
+* | 0101 | LSR A | Logical Shift Right RegA |
+* | 0110 | MOV A -> B | Move RegA Value to RegB |
+* | 0111 | MOV B -> A | Move RegB Value to RegA |
+* | 1000 | Complement A | Complements RegA |
+* | 1001 | Complement B | Complements RegB |
+* | 1010 | ADD | Add RegA and RegB, stores results in RegC |
+* | 1011 | SUB | Subtracts RegA and RegB, stores result in RegC|
+* | 1100 | Increment A | Increments RegA |
+* | 1101 | Decrement A | Decrement RegA |
+* | 1110 | AND | AND RegA and RegB, stores results in RegC |
+* | 1111 | OR | OR RegA and RegB, stores results in RegC |
 
 
 ## System Architecture
