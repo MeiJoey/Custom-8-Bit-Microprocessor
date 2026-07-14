@@ -1,6 +1,6 @@
 # Custom 8-Bit Microprocessor
 
-A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and deployed onto a Xilinx Basys 3 FPGA. This architecture features a custom 4-bit opcode instruction set capable of executing 16 arithmetic, logical, and register-transfer operations.
+A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and deployed onto a Xilinx Basys 3 FPGA. This architecture features a custom 4-bit opcode instruction set capable of executing 16 arithmetic, logical, and register manipulation operations.
 
 ## Features
 * Single-cycle architecture
@@ -11,25 +11,27 @@ A single-cycle, memoryless 8-bit microprocessor implemented in Verilog HDL and d
 * Behavioral simulation testbench
 
 ## Instruction Set
-* The processor implements a custom 4-bit instruction set supporting 16 arithmetic, logical, and register-transfer operations. Each opcode is decoded into one-hot control signals by a 4×16 instruction decoder.
-* | Opcode | Operation | Description |
-* |:------:|-----------|-------------|
-* | 0000 | Load A | Loads Value into RegA |
-* | 0001 | Load B | Loads Value into RegB |
-* | 0010 | Clear A | Clears RegA |
-* | 0011 | Clear B | Clears RegB |
-* | 0100 | LSL A | Logical Shift Left RegA |
-* | 0101 | LSR A | Logical Shift Right RegA |
-* | 0110 | MOV A -> B | Move RegA Value to RegB |
-* | 0111 | MOV B -> A | Move RegB Value to RegA |
-* | 1000 | Complement A | Complements RegA |
-* | 1001 | Complement B | Complements RegB |
-* | 1010 | ADD | Add RegA and RegB, stores results in RegC |
-* | 1011 | SUB | Subtracts RegA and RegB, stores result in RegC|
-* | 1100 | Increment A | Increments RegA |
-* | 1101 | Decrement A | Decrement RegA |
-* | 1110 | AND | AND RegA and RegB, stores results in RegC |
-* | 1111 | OR | OR RegA and RegB, stores results in RegC |
+
+The processor implements a custom 4-bit instruction set supporting 16 data movement, arithmetic, logical, shift, and register manipulation operations. Each opcode is decoded into one-hot control signals by a 4×16 instruction decoder.
+
+| Opcode | Operation | Description |
+|:------:|-----------|-------------|
+| 0000 | Load A | Loads value into RegA |
+| 0001 | Load B | Loads value into RegB |
+| 0010 | Clear A | Clears RegA |
+| 0011 | Clear B | Clears RegB |
+| 0100 | LSL A | Logical shift left RegA |
+| 0101 | LSR A | Logical shift right RegA |
+| 0110 | MOV A → B | Move RegA to RegB |
+| 0111 | MOV B → A | Move RegB to RegA |
+| 1000 | Complement A | Complement RegA |
+| 1001 | Complement B | Complement RegB |
+| 1010 | ADD | RegC ← RegA + RegB |
+| 1011 | SUB | RegC ← RegA − RegB |
+| 1100 | Increment A | Increment RegA |
+| 1101 | Decrement A | Decrement RegA |
+| 1110 | AND | RegC ← RegA AND RegB |
+| 1111 | OR | RegC ← RegA OR RegB |
 
 
 ## System Architecture
