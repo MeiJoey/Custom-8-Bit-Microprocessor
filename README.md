@@ -33,6 +33,7 @@ The processor implements a custom 4-bit instruction set supporting 16 data movem
 | 1110 | AND | RegC ← RegA AND RegB |
 | 1111 | OR | RegC ← RegA OR RegB |
 
+*Table 1: Opcodes and their Operations*
 
 ## System Architecture
 * **Instruction Decoder:** A $4\times16$ decoder that translates 4-bit opcodes into one-hot control signals.
@@ -41,6 +42,7 @@ The processor implements a custom 4-bit instruction set supporting 16 data movem
 * **Hardware I/O:** Features a 10ms hardware debounce module for single-cycle execution via pushbuttons, physical slide-switch data entry, and multiplexed 7-segment display tracking.
 
 ![CPU Block Diagram](images/BlockDiagram.png)
+*Figure 1: Block Diagram of Microprocessor*
 
 ## Tools
 * **Language:** Verilog HDL
@@ -52,6 +54,29 @@ Functional verification was performed using behavioral Verilog testbenches to va
 * *Simulation Tip:* To expedite testbench behavioral verification, the physical 10ms debounce logic counter was bypassed to allow fluid continuous-enable execution tracking via the Vivado Tcl Console.
 
 ![Waveform](images/Waveform.png)
+*Figure 2: Waveform of simulation*
+
+### Tcl Console Output Log
+```text
+PASS: LOAD A
+PASS: LOAD B
+PASS: CLR A
+PASS: CLR B
+PASS: LSL A
+PASS: LSR A
+PASS: MOV A->B
+PASS: MOV B->A
+PASS: Complement A
+PASS: Complement B
+PASS: ADD
+PASS: SUB
+PASS: Increment A
+PASS: Decrement A
+PASS: AND
+PASS: OR
+
+Test Completed
+```
 
 ## How to Run
 1. Clone this repository.
