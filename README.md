@@ -79,7 +79,7 @@ Test Completed
 ```
 
 ## Project Demo
-<video src="assets/your-video-name.mp4" width="100%" controls></video>
+<video src="video_demo/FPGA_Demo.mp4" width="100%" controls></video>
 
 
 ## How to Run
