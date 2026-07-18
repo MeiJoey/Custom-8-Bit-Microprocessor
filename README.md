@@ -79,8 +79,15 @@ Test Completed
 ```
 
 ## Project Demo
-<video src="video_demo/FPGA_Demo.mp4" width="100%" controls></video>
+[![Watch the FPGA Demo](./video_demo/demo-thumbnail.png)](./video_demo/FPGA_Demo.mp4)
 
+**Timeline**
+- **0:00** – Reset the microprocessor, clearing all registers and returning the CPU to its initial state.
+- **0:05** – Load Register A with `0b11100000` (`0xE0`). The value is shown on the 7-segment display and the 8 onboard LEDs.
+- **0:14** – Execute `MOV A → B`, copying the contents of Register A into Register B. The register display confirms both registers now contain `0xE0`.
+- **0:25** – Execute `LSL A`, performing a logical left shift on Register A. The updated value is displayed on the LEDs and 7-segment display.
+- **0:30** – Execute `ADD`, adding the values in Registers A and B. The result is written to **Register C**, and the **Carry Out (Cout)** LED illuminates to indicate a carry was generated.
+- **0:36** – Execute `OR`, performing a bitwise OR between Registers A and B. The result is written to **Register C** and displayed on the LEDs and 7-segment display.
 
 ## How to Run
 1. Clone this repository.
