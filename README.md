@@ -78,6 +78,10 @@ PASS: OR
 Test Completed
 ```
 
+## Project Demo
+<video src="assets/your-video-name.mp4" width="100%" controls></video>
+
+
 ## How to Run
 1. Clone this repository.
 2. Open Xilinx Vivado and create a new project targeting the **Basys 3 board**.
