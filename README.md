@@ -79,7 +79,9 @@ Test Completed
 ```
 
 ## Project Demo
-🎥 [Watch the FPGA Demo](./video_demo/FPGA_Demo.mp4)
+Watch online: https://youtu.be/QM0yYVM33Oc
+
+[Download FPGA Demo](./video_demo/FPGA_Demo.mp4)
 
 **Timeline**
 - **0:00** – Reset the microprocessor, clearing all registers and returning the CPU to its initial state.
